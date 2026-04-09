@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdjsqj2v5kmao"]
+
+[ext_resource type="PackedScene" uid="uid://biowmglokimc8" path="res://scenes/Level1.tscn" id="1_1v28p"]
+[ext_resource type="PackedScene" uid="uid://b2qy1p1jit36l" path="res://scenes/player.tscn" id="2_1ames"]
+[ext_resource type="PackedScene" uid="uid://qfa07i410gc1" path="res://scenes/spikes.tscn" id="3_hdqc1"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Level1" parent="." instance=ExtResource("1_1v28p")]
+position = Vector2(120, 62)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(146, 91)
+zoom = Vector2(2.5, 2.5)
+
+[node name="Player" parent="." instance=ExtResource("2_1ames")]
+position = Vector2(65, 30)
+
+[node name="Spikes" parent="." instance=ExtResource("3_hdqc1")]
+position = Vector2(115, 37)
